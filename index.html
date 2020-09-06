@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>denotes: 'A timer with a purpose'</title>
+    
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <main class="mc-wrp">
+        <header class="mh">
+            <h1>DENOTES</h1>
+            <h4>
+                When you start the timer, do what you normally would work on.<br>
+                Press a lap whenever...<br>
+                <p class="catch">
+                    the cool part is that after you press stop a ratio will appear.
+                    <br>(Awesome...what does it represent tho?)<br>
+                </p>
+                <strong class="main-feature">Reaction time (index)::RTI</strong>
+            </h4>
+        </header>
+        <div class="console-gate innie-outtie" id="rocket">
+            <!-- 
+                THIS DIV 
+                << 
+                    --breadcrumbs(behind-the-scenes, signup, login|logout)
+                    --form#newTask
+                        -> taskTitle
+                        -> taskDescr
+                        onSubmit>
+                        _appended_>
+                            ~~> splits
+                            ~~> intervals
+                            ~~> stopTime
+                            ~~> reactiontTime| aka: " udu0!rt "
+
+             -->
+        </div>
+
+        <div class="lap-counter" id="counter"></div>
+        </div>
+        <div id="laps" class="times">
+            <p class="splits">
+                Split_times:: <span class="stimes" id="splits"></span>
+            </p><br>
+        </div>
+
+        <div id="ra" class="receipt-area">
+            <h3>Your Stop time:</h3>
+            <!-- append time reciepts here -->
+        </div>
+
+        <div id="stopwatch">
+            <p id="hh" class="hr-hldr"></p>
+            <p id="mm" class="min-hdr"></p>
+            <p id="ss" class="sec-hldr"></p>
+            <p id="msms" class="ms-hldr"></p>
+        </div>
+
+        <div class="buttons">
+            <button 
+            id="strt" 
+            class="sw-btn btn-start" 
+            type="button"
+            onclick="run();">Start</button>
+            
+            <button 
+            id="lap" 
+            class="sw-btn btn-lap" 
+            type="button"
+            onclick="lap();">Lap-Intvl</button>
+            
+            <button 
+            id="stp" 
+            class="sw-btn btn-stop" 
+            type="button"
+            onclick="stop();">Stop</button>
+            <div class="rt" id="rs">
+                <!-- 
+                    RATIO('time-splits') ==equiv== 'reaction-time'
+                    -------------------------------------------------
+                    @nextStep#tcot 
+                        --account-for 
+                        > --relation-to-phi (for realism/randomness) 
+                        --our-gamma-in-this-case
+                    _________________________________________________
+                    @getOffsetToPi#pi#nOne 
+                        --account-for 
+                        > --relation-to-pi (to factor in for symmetry) 
+                        --bringing-it-together
+                -->
+            </div>
+        </div>
+        <br>
+        <footer class="desc-footer mw-ftr">
+            <h3 class="where-this-can-b-used ftr-htag">
+                How<span class="s-wrd" id="one-woosh"> can</span> this<span class="s-wrd" id="two-woosh"> be</span> <span class="s-wrd" id="three-woosh"> applied</span>?
+            </h3>
+            <p class="ftr-txt ftr">
+                Start = "clock starts when window loads a page(if you apply this to analyze webpage activity)"
+            </p>
+            <p class="ftr-txt ftr-p-1">
+                LAP-Intvl = "interval between each click(<span class="s-wrd" id="pha">anchor</span>, item, views sudDir, etc.)"
+            </p>
+            <p class="ftr-txt ftr-p-2">
+                Stop = "when user <span class="s-wrd" id="phl">leaves</span> the <span class="s-wrd" id="phw">website</span>; when socket disconnects"
+            </p>
+        </footer>
+<!-- 
+        <script>
+            var twoTimes = new XMLHttpRequest();
+            twoTimes.open('GET', 'http://localhost:4501/hello/my-name-is/semaj', false);
+            twoTimes.send(null); // don't send a damn thing.
+            console.log(JSON.stringify(twoTimes.responseText));
+        </script> -->
+        
+        <script src="js/watch.js"></script>
+        <script src="js/index.js"></script>
+
+    </main>
+</body>
+</html>

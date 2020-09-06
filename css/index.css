@@ -1,0 +1,128 @@
+:root {
+    --bdy-bkg: #740aca;
+    --mw-bkg: #01f5b7;
+    --m-hdr: #90bed3;
+    --dv-btns: #cb9a45fa;
+    --dv-intz: #e4e014;
+    --dv-stopz: #7676f8;
+    --start-btn: #45df22;
+    --lap-btn: #6abfc3;
+    --stop-btn: #ff0000;
+    --footer: #cabf63;
+    --ftr-hovr: #51ff00;
+}
+body { background-color: var(--bdy-bkg); }
+main {
+    background-color: var(--mw-bkg);
+    margin: 45px;
+    padding: 21px;
+    border-style: outset;
+    border-radius: 2.14em;
+}
+header h1 {
+    text-decoration: underline;
+    font-style: italic;
+    padding: -4px;
+    background-color: var(--m-hdr);
+    display: inline-block;
+    border-radius: 4.14em;
+    transition: padding 0.404s ease-in;
+}
+header h1:hover { padding: 15px; }
+div.buttons {
+    padding: 9px;
+    background-color: var(--dv-btns);
+    display: inline-block;
+    border-radius: 0.7293em;
+    border-style: outset;
+}
+button.sw-btn {
+    padding: 3px;
+    margin-right: 5px;
+    border-radius: 0.5em;
+    border-style: groove;
+    transition: padding 0.117s ease-in-out;
+    border-top-style: double;
+    font-weight: bold;
+}
+button.sw-btn:hover {
+    padding: 6px;
+    font-weight: bolder;
+}
+
+button#strt {
+    background-color: var(--start-btn);
+}
+button#lap {
+    background-color: var(--lap-btn);
+}
+button#stp {
+    background-color: var(--stop-btn);
+}
+
+div#rs {
+    margin-top: 8px;
+    display: inline-block;
+}
+
+
+div p {
+    display: inline-block;
+}
+
+
+
+div.times {
+    background-color: var(--dv-intz);
+    margin-bottom: 15px;
+    margin-right: 345px;
+    padding: 4px;
+    border-radius: 0.85em;
+    border-style: outset;
+}
+
+div.receipt-area {
+    background-color: var(--dv-stopz);
+    padding: 19px;
+    margin-top: 4px;
+    margin-right: 975px;
+    margin-bottom: 5px;
+    border-radius: 0.62em;
+    border-style: outset;
+}
+
+p.receipt {
+    margin: 4px;
+}
+
+
+footer.mw-ftr {
+    padding: 7.12345px;
+    background-color: var(--footer);
+    margin-top: 1.204em;
+    margin-bottom: 1em;
+    display:inline-block;
+    border-radius: 1em;
+    border-style: outset;
+    transition: padding 0.314s ease-out;
+}
+footer:hover {
+    padding: 14.2469px;
+    background-color: var(--ftr-hovr);
+}
+
+footer h3.ftr-htag, p.ftr-txt, span {
+    font-style: italic;
+    font-weight: bolder;
+    transition: padding 0.33s ease-out;
+}
+
+footer p:hover {
+    display: block; 
+    padding: 8px;
+}
+
+footer h3 span.s-wrd:hover {
+    padding: 7px;
+    color: #ff0000;
+}
